@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaBeer } from "react-icons/fa";
-import AuthLayout from "./auth/AuthLayout";
+import AuthLayout from "../pages/auth/layout";
 
 export default function index() {
   return (
@@ -14,6 +14,7 @@ export default function index() {
           src={"/SS-logo.png"}
           width={200}
           height={60}
+          className="w-auto h-auto"
         />
         <div className="flex items-center gap-2">
           Invite New User <FaBeer />
@@ -35,14 +36,14 @@ export default function index() {
           type="password"
           placeholder="input your password"
         />
-        <p className="flex justify-between items-center text-sm my-3">
+        <div className="flex justify-between items-center text-sm my-3">
           <p>
             <input type="checkbox" /> Remember me
           </p>
           <p>
             <Link href="#">Forgot Password?</Link>
           </p>
-        </p>
+        </div>
         <Button type="submit" variants="solid" text="SIGN IN" />
       </div>
     </AuthLayout>

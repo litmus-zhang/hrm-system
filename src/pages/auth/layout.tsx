@@ -13,7 +13,7 @@ export default function AuthLayout({
           Lorem ipsum dolor sit amet, consectell tu orem consec Lorem ipsum
           dolor sit amet, consectetur adipiscilll adi
         </p>
-        <Image className="motion-safe:animate-pulse my-10" width={400} height={400} alt="Login" src={"/login-image.png"} />
+        <Image className="motion-safe:animate-pulse my-10 w-auto h-auto" width={400} height={400} alt="Login" src={"/login-image.png"} />
       </section>
     </div>
   );
