@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaBeer } from "react-icons/fa";
-import AuthLayout from "./auth/AuthLayout";
+import AuthLayout from "./AuthLayout";
 
 export default function index() {
   return (
